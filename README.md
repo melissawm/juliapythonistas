@@ -15,3 +15,4 @@ Referências:
 
 [5] https://stackoverflow.com/questions/23480722/what-is-a-symbol-in-julia
 
+Exemplo o-ring-erosion-or-blowby.data retirado de https://archive.ics.uci.edu/ml/datasets/Challenger+USA+Space+Shuttle+O-Ring
