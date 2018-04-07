@@ -73,7 +73,7 @@
     \end{center}
     Exemplo: Ao somar duas matrizes A e B, podemos pensar em Python em algo do tipo
     \begin{center}
-		 \texttt{A.plus(B)}
+		 \texttt{A.plus(B)} $\leftarrow $ \emph{single dispatch!}
     \end{center}
     Em Julia, temos
     \begin{center}
@@ -97,6 +97,21 @@
 %Julia has proven that this is remarkably well suited for numerical computing. As an
 %aside, in Julia, method ambiguities throw a warning.
 %functions have methods!
+\end{frame}
+
+\begin{frame}
+  \frametitle{Multiple Dispatch}
+  Os métodos são definidos de maneira (possivelmente) diferente para cada combinação de argumentos de entrada.
+\vfill
+  Exemplo:
+  \begin{center}
+  \begin{minipage}{10cm}
+    \texttt{collide\underline{\ }with(x::Asteroid,  y::Asteroid)  = ... }\\
+    \texttt{collide\underline{\ }with(x::Asteroid,  y::Spaceship) = ... }\\
+    \texttt{collide\underline{\ }with(x::Spaceship, y::Asteroid)  = ... }\\
+    \texttt{collide\underline{\ }with(x::Spaceship, y::Spaceship) = ... }
+  \end{minipage}
+  \end{center}
 \end{frame}
 
 \begin{frame}
